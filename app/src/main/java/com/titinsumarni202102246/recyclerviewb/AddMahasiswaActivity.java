@@ -99,7 +99,7 @@ public class AddMahasiswaActivity extends AppCompatActivity
     }
 
     private void initInputs(){
-        _alamatEditText = findViewById(R.id.alamatEdiText);
+        _alamatEditText = findViewById(R.id.alamatEditText);
         _jenisKelaminSpinner = findViewById(R.id.jenisKelaminSpinner);
         _jpSpinner = findViewById(R.id.jpSpinner);
         _namaEditText = findViewById(R.id.namaEditText);
@@ -107,6 +107,6 @@ public class AddMahasiswaActivity extends AppCompatActivity
         _statusNikahSpinner = findViewById(R.id.statusNikahSpinner);
         _tahunMasukEditText = findViewById(R.id.tahunMasukEditText);
         _tanggalLahirEditText = findViewById(R.id.tanggalLahirEditText);
-        _tempatLahirEditText = findViewById(R.id.tempatLahirEdiText);
+        _tempatLahirEditText = findViewById(R.id.tempatlahirEditText);
     }
 }
