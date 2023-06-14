@@ -8,7 +8,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
-import java.util.Locale;
 
 public class MahasiswaAdapter extends RecyclerView.Adapter<MahasiswaViewHolder>
 {
