@@ -54,6 +54,7 @@ public class AddMahasiswaActivity extends AppCompatActivity
                 try {
                     alamat = URLEncoder.encode(alamat,"utf-8");
                     jenisKelamin = URLEncoder.encode(jenisKelamin, "utf-8");
+                    jp = URLEncoder.encode(jp, "utf-8");
                     nama = URLEncoder.encode(nama, "utf-8");
                     nim = URLEncoder.encode(nim, "utf-8");
                     statusNikah = URLEncoder.encode(statusNikah, "utf-8");
@@ -65,23 +66,23 @@ public class AddMahasiswaActivity extends AppCompatActivity
 
                 String url = "https://stmikpontianak.net/011100862/tambahMahasiswa.php" +
                         "?nim=" + nim   +
-                        "&nama" + nama  +
-                        "&jenisKelamin" + jenisKelamin  +
-                        "&tempatLahir"  + tempatLahir +
-                        "&tanggalLahir" + tanggalLahir  +
-                        "&alamat"   +   alamat  +
-                        "&jp"   + jp    +
-                        "&statusPernikahan" + statusNikah   +
-                        "&tahunMasuk"   +   tahunMasuk;
+                        "&nama=" + nama  +
+                        "&jenisKelamin=" + jenisKelamin  +
+                        "&tempatLahir="  + tempatLahir +
+                        "&tanggalLahir=" + tanggalLahir  +
+                        "&alamat="   +   alamat  +
+                        "&jp="   + jp    +
+                        "&statusPernikahan=" + statusNikah   +
+                        "&tahunMasuk="   +   tahunMasuk;
 
-                Log.d("tw", url);
+                Log.d("*tw*", url);
 
                 AsyncHttpClient ahc = new AsyncHttpClient();
 
                 ahc.get(url, new AsyncHttpResponseHandler() {
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
-                        Log.d("tw", new String(responseBody));
+                        Log.d("*tw*", new String(responseBody));
 
                         new AlertDialog.Builder(AddMahasiswaActivity.this)
                                 .setTitle("Berhasil")
